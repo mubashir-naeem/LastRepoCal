@@ -68,7 +68,7 @@ function getUsers() {
     if(a != "" && b != "" && op != null) {
         document.getElementById('spinner').style.display = 'block';
         document.getElementById('data').style.display = 'none';
-        uri = "http://d9fe-203-175-72-28.ngrok.io/calculator/" + a + "/" + op + "/" + b;
+        uri = "https://web-app-cc.azurewebsites.net" + a + "/" + op + "/" + b;   //  "http://d9fe-203-175-72-28.ngrok.io/calculator/"
         var url = encodeURI(uri);
         console.log(url);
         fetch(url, {method: "GET"}
